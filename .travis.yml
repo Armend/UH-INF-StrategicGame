@@ -1,6 +1,13 @@
+# Compiling options:
 language: cpp
 compiler:
   - gcc
-  - clang
 # Change this to your needs
 script: cmake . && make
+
+# Travis options
+
+# Whitelist
+branches:
+  only:
+    - test-ci
